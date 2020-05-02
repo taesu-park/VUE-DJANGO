@@ -14,7 +14,7 @@ def todo_index_create(request):
         serializers = TodoSerializers(todos, many=True)
         return Response(serializers.data)
     else:
-        serializers = TodoSerializers(data=request.POST)
+        serializers = TodoSerializers(data=request.data)
         if serializers.is_valid(raise_exception=True):
             serializers.save()
             return Response(serializers.data)
