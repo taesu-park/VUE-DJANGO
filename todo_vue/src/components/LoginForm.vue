@@ -1,6 +1,5 @@
 <template>
     <form class="login-form" @submit.prevent="login">
-    
         <label for="user_id">USERNAME : </label>
         <input v-model="credentials.username" type="text" id="user_id"><br>
         <label for="password">PASSWORD : </label>
