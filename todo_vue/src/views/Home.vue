@@ -78,7 +78,7 @@ export default {
   islogin(){
     this.$session.start()
     if (!this.$session.has('jwt'))
-    router.push('login/')
+    router.push('/login')
   }
 },
     mounted(){

@@ -6,7 +6,7 @@
        -> routes에 정의된 해당 컴포넌트를 불러온다.
     -->
       <router-link to="/">Home</router-link>
-      <div style="display:inline" v-if="isAuthenticated">
+      <div style="display:inline" v-if="!isAuthenticated">
       <router-link to="/login">Login</router-link>
       </div>
       <div style="display:inline" v-else>
