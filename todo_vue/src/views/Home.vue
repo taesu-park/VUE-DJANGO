@@ -2,8 +2,9 @@
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
     <!-- PascalCase, uppercamelcase-->
-    <!--이벤트 리스터 등록-->
+    <!-- 이벤트 리스터 등록 -->
     <TodoForm @todoCreate-event="TodoCreate"/>
+    <!-- Kebab-case도 가능 -->
     <TodoList :todos="todos"/>
   </div>
 </template>
