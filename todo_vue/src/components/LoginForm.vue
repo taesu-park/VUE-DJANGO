@@ -26,6 +26,7 @@ export default {
                 const token = response.data.token
                 this.$session.start()
                 this.$session.set('jwt',token)
+                this.$store.dispatch('login',token)
                 router.push('/')
             })
             .catch(error =>{
